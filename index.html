@@ -3,6 +3,7 @@
     <head>
         <link rel="stylesheet" text="text/css" href="styles/styles.css">
         <link rel="stylesheet" text="text/css" href="styles/animation.css">
+        <script src="./scripts/scroll.js" type="text/javascript"></script>
     </head>
 
     <body>
@@ -12,11 +13,11 @@
 
         <!-- Naviagtion Menu -->
         <div id="menu-bar">
-            <button class="menu-button highlight">Contact</button>
-            <button class="menu-button highlight">Resume & Documents</button>
-            <button class="menu-button highlight">Education & Experience</button>
-            <button class="menu-button highlight">Electronics Projects</button>
-            <button class="menu-button highlight">Software Projects</button>
+            <button class="menu-button highlight" onclick="focusSectionNoScroll('contact-me')">Contact</button>
+            <button class="menu-button highlight" onclick="focusSectionNoScroll('resume-docs')">Resume & Documents</button>
+            <button class="menu-button highlight" onclick="focusSectionNoScroll('education-exp')">Education & Experience</button>
+            <button class="menu-button highlight" onclick="focusSectionNoScroll('elec-projects')">Electronics Projects</button>
+            <button class="menu-button highlight" onclick="focusSectionNoScroll('sw-projects')">Software Projects</button>
         </div>
         <!-- End Navigation Menu -->
 
@@ -37,7 +38,7 @@
 
         <div id="projects-container">
             <!-- Begin Software Projects -->
-            <div class="project-type">
+            <div id="sw-projects" class="project-type">
                 <h2 class="project-header">Software Projects</h2>
                 <li class="project-list">ShredTree</li>
                 <div class="project-description">
@@ -64,7 +65,7 @@
             <!-- End Software Projects -->
 
             <!-- Begin Electronics Projects -->
-            <div class="project-type">
+            <div id="elec-projects" class="project-type">
                 <h2 class="project-header">Electronics Projects</h2>
                 <li class="project-list">Coaster</li>
                 <div class="project-description">
@@ -78,7 +79,7 @@
             <!-- End Electronics Projects -->
 
             <!-- Begin Education & Experience Section -->
-            <div class="project-type">
+            <div id="education-exp" class="project-type">
                 <h2 class="project-header">Education and Experience</h2>
                     <li class="project-list">Education</li>
                         <div class="project-description">
@@ -91,13 +92,46 @@
                         
                     <li class="project-list">Work Experience:</li>
                         <div class="project-description">
-                            <p>Software QA Test Engineer - Olympus Corporation of the Americas </br>
-                               (July 2019 - Present) </br>
-
+                            <p> Software QA Test Engineer - Olympus Corporation of the Americas </br>
+                                (July 2019 - Present) </br>
+                                Description goes here...</br>
+                                </br>
+                                VCSEL Test Engineer Intern - II-VI OptoElectronic Devices </br>
+                                (June 2018 - February 2019) </br>
+                                Description goes here...</br>
+                                </br>
+                                Senior Capstone Project Manager - Lafayette College </br>
+                                (August 2018 - June 2019) </br>
+                                Description goes here... </br>
+                                </br>
                             </p>
                         </div>
                 </div>
                 <!-- End Education & Experience Section -->
+
+                <!-- Begin Resume and Documents Section -->
+                <div id="resume-docs" class="project-type">
+                    <h2 class="project-header">Resume & Documents</h2>
+                    <li class="project-list">Resume</li>
+                    <div class="project-description">
+                        <p>Add link to resume here....</p>    
+                    </div>
+                    <li class="project-list">Other</li>
+                    <div class="project-description">
+                        <p>More Documents would go here...</p>
+                    </div>
+                </div>
+                <!-- End Resume and Documents Section -->
+
+                <!-- Begin Contact Section -->
+                <div id="contact-me" class="project-type">
+                    <h2 class="project-header">Contact Me</h2>
+                    <li class="project-list">Email</li>
+                    <div class="project-description">
+                        <p>kmetzdevelopment@gmail.com</p>    
+                    </div>
+                </div>
+                <!-- End Contact Section -->
         </div>
     </body>
 </html>

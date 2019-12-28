@@ -124,5 +124,14 @@ button {
 }
 
 .project-list {
+    margin-top: 1em;
     color: #FFFFFF;
+}
+
+.feature-header {
+    margin: 0;
+}
+
+.feature-list {
+    
 }
